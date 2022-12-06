@@ -2,6 +2,6 @@
 def no_c(my_string):
     copy = ""
     for i in my_string:
-        if i != 'c' and i != 'C':
+        if i is not 'c' and i is not 'C':
             copy =+ i
     return (copy)
