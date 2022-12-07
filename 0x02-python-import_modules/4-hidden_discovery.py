@@ -2,8 +2,8 @@
 import hidden_4
 
 def discover():
-    string = dir(hidden_4)
-    for i in name:
+    strings = dir(hidden_4)
+    for i in strings:
         if i[:2] != '__':
             print("{:s}".format(i))
 
