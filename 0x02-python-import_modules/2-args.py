@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def print_arg(argv):
-    """Print the number of and list of arguments."""
     count = len(argv) - 1
     if count == 0:
         print("{:d} argument.".format(count))
