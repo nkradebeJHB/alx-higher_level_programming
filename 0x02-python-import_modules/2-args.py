@@ -12,7 +12,7 @@ def print_arg(argv):
             print("{:d} arguments:".format(count))
         i = 1
         while i <= count:
-            print("{:d}: {:is}".format(i, argv[i]))
+            print("{:d}: {:s}".format(i, argv[i]))
             i += 1
 
 if __name__ == "__main__":
