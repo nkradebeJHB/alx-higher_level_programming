@@ -45,7 +45,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -63,7 +63,7 @@ class Rectangle:
         rectangle = []
 
         for i in range(self.__height):
-            [reactangle.append('#') for j in range(self.__width)]
+            [rectangle.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+                rectangle.append("\n")
+        return ("".join(rectangle))
