@@ -5,6 +5,12 @@ Testing 7-base_geometry.py
 We are testing  module BaseGeometry which 2 methods: "integer_validator" and "area"
 
 "integer_validator()" returns true is a value us an integer.
-:: importing BaseGeometry
+:: with positive integer
    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
    >>> bg = BaseGeometry()
+
+:: with positive integer
+   >>> bg.integer_validator("posnumber", 1)
+
+:: with negative integer
+   >>> bg.integer_validator("negnumber, -1)
