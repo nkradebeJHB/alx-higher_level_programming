@@ -1,0 +1,15 @@
+==========================================
+Testing 1-my_list.py
+==========================================
+
+We are testing a module that inherits a list which has
+a mothod "print_sorted()"
+
+"print_sorted()" returns a sorted list.
+:: importing a MyList
+   >>> MyList = __import__('1-my_list').MyList
+   >>> sort_list = MyList()
+   >>> isinstance(sort_list, list)
+   True
+   >>> sort_list.print_sorted()
+   []
