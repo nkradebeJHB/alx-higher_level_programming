@@ -1,0 +1,10 @@
+=================================
+Testing 7-base_geometry.py
+=================================
+
+We are testing  module BaseGeometry which 2 methods: "integer_validator" and "area"
+
+"integer_validator()" returns true is a value us an integer.
+:: importing BaseGeometry
+   >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+   >>> bg = BaseGeometry()
