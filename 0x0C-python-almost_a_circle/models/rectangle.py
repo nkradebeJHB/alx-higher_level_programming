@@ -35,14 +35,12 @@ class Rectangle(Base):
             return self.__width
 
         @width.setter
-        def width(self, __width):
+        def width(self, width):
             self.__width = width
 
         @property
         def height(self):
-            """height of the rectangle"""
-           
-           return self.__height
+            return self.__height
 
         @height.setter
         def height(self, height):
