@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+
 """
 ========================
 module for Base class
 ========================
 """
 
+
 class Base:
-    """Class base
+    """
+    Class base.
     Args:
         id: an interger.
     """
