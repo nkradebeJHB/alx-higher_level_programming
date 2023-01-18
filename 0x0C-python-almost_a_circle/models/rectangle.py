@@ -89,9 +89,8 @@ class Rectangle(Base):
         """prints in stdout the Rectangle instance """
 
         [print() for i in range(self.y)]
-        for j in range(self.height):
-            print(" " *self.x + "#" * self.width)
-
+        [print(" " * self.x + "#" * self.width)
+                for j in range(self.height)]
     def __str__(self):
         """overrides __str__ and returns rectangle info"""
 
