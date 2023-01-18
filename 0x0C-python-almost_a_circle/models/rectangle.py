@@ -93,3 +93,8 @@ class Rectangle(Base):
         for j in range(self.height):
             print(" " *self.x + "#" * self.width)
 
+    def __str__(self):
+        """overrides __str__ and returns rectangle info"""
+
+        return '[{}] ({}) {}/{} - {}/{}'.\
+                format(type(self).__name__, self.id, self.x, self.y, self.width,
