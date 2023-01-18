@@ -23,14 +23,14 @@ class Rectangle(Base):
         """rectangle constructor"""
 
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
         @property
         def width(self):
-            return self._width
+            return self.__width
 
         @width.setter
         def width(self, width):
@@ -39,11 +39,11 @@ class Rectangle(Base):
             elif width <= 0:
                 raise ValueError("width must be > 0")
             else:
-                self._width = width
+                self.__width = width
 
         @property
         def height(self):
-            return self._height
+            return self.__height
 
         @height.setter
         def height(self, height):
@@ -52,11 +52,11 @@ class Rectangle(Base):
             elif height <= 0:
                 raise ValueError("height must be > 0")
             else:
-                self._height = height
+                self.__height = height
 
         @property
         def x(self):
-            return self._x
+            return self.__x
 
         @x.setter
         def x(self, x):
@@ -65,11 +65,11 @@ class Rectangle(Base):
             elif x < 0:
                 raise ValueError("x must be >= 0")
             else:
-                self._x = x
+                self.__x = x
 
         @property
         def y(self):
-            return self._y
+            return self.__y
 
         @y.setter
         def y(self, y):
@@ -78,7 +78,7 @@ class Rectangle(Base):
             elif y < 0:
                 raise ValueError("y must be >= 0")
             else:
-                self._y = y
+                self.__y = y
 
         def area(self):
             """method to determine the area of a rectangle"""
