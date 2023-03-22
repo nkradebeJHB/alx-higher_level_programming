@@ -17,7 +17,7 @@ if __name__ == "__main__":
                 .format(argv[1], argv[2], argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
-    the_ession = sessionmaker(bind=engine)
+    the_session = sessionmaker(bind=engine)
     session = the_session()
     state = session.query(State).\
         filter(State.name == argv[4])
