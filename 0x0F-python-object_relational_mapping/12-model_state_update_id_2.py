@@ -19,8 +19,8 @@ if __name__ == "__main__":
 
     the_session = sessionmaker(bind=engine)
     session = the_session()
-    state = session.query(State).filter(State.id == 2)
+    state = session.query(State).filter(State.id == 2).all()
     if state:
-        state.name = "New Mexico"
+        state[0].name = "New Mexico"
     session.commit()
     session.close()
