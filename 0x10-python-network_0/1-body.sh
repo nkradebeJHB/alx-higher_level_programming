@@ -1,6 +1,3 @@
 #!/bin/bash
-# Bash script that takes in a URL, sends a 
-# GET request to the URL, and displays the body 
-# of the response.
-
-curl -Ls "$1"
+# Bash script that takes in a URL, sends a GET request to the URL.
+curl -sL "$1" -X GET
