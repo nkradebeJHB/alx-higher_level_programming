@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Uses requests module -- yay"""
+""" a Python script that fetches https://alx-intranet.hbtn.io/status"""
 import requests
 
 if __name__ == "__main__":
